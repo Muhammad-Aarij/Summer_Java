@@ -1,4 +1,7 @@
 public class ThreadWay2 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         
     
@@ -10,7 +13,13 @@ public class ThreadWay2 {
     Thread t2=new Thread(threadClass2);
 
     t1.start();
+    try {
+        Thread.sleep(5);
+    } catch (InterruptedException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
     t2.start();
-    
+        
 }
 }
