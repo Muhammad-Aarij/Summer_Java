@@ -6,14 +6,15 @@ import java.util.stream.*;
 public class Streaam {
     public static void main(String[] args) {
 
-        List<Integer> num =new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6)) ;
+        List<Integer> num =new ArrayList<>(Arrays.asList(1, 2, 3, 5, 4, 6)) ;
         num.add(8);
         System.out.println();
         Stream<Integer> s=num.stream();
         Stream<Integer> s1=s.filter(n->n>4);
         Stream<Integer> s2=s1.map(n->n*n);
+        Stream<Integer> s3=s2.sorted();
         
-        s2.forEach(n->System.out.println(n));
+        s3.forEach(n->System.out.println(n));
         
         int result =num.stream()
                             .filter(n->n>4)
