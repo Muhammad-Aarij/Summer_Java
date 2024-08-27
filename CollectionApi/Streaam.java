@@ -6,6 +6,12 @@ import java.util.stream.*;
 public class Streaam {
     public static void main(String[] args) {
 
+        var lst=new ArrayList<>();
+        lst.add(1);
+        System.out.println("LIST 1");
+
+    
+
         List<Integer> num =new ArrayList<>(Arrays.asList(1, 2, 3, 5, 4, 6)) ;
         num.add(8);
         System.out.println();

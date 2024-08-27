@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Pseudo-classes */
+    a:hover {
+      color: red;
+    }
+    input:focus {
+      background-color: yellow;
+    }
+    li:nth-child(even) {
+      background-color: lightgray;
+    }
+    
+    /* Pseudo-elements */
+    p::before {
+      content: "Note: ";
+      color: red;
+    }
+    p::after {
+      content: " - End";
+      color: blue;
+    }
+    p::first-letter {
+      font-size: 2em;
+      color: green;
+    }
+    p::first-line {
+      font-weight: bold;
+    }
+    ::selection {
+      background: yellow;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <a href="#">Hover over me</a><br>
+  <input type="text" placeholder="Focus on me"><br>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  <p>This is a paragraph. Notice the first letter and the first line styling. This paragraph also has before and after content.</p>
+</body>
+</html>
